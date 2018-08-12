@@ -4,7 +4,7 @@ function getFirstSelector(selector) {
 
 
 function nestedTarget() {
-  var main = document.getElementsByTagName('main'[0]);
+  var main = document.getElementById('#nested');
   var getIt = main.children[3];
   return getIt;
 }
