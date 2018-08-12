@@ -1,1 +1,30 @@
+function getFirstSelector(selector) {
+  return document.querySelector(selector);
+} 
 
+
+function nestedTarget() {
+  var main = document.getElementsByTagName('main'[0]);
+  var getIt = main.children[3];
+  return getIt;
+}
+
+
+function deepestChild() {
+  let current = document.querySelector('#grandnode');
+  let next = grandnode.children[0];
+  while (next) {
+    current = next;
+    next = grandnode.children[0];
+      }
+      return current;
+  }
+
+
+
+function increaseRankBy(n) {
+  var lis = document.getElementById('app').querySelectorAll('ul.ranked-list li'); 
+  for (i = 0; i < lis.length; i++) {
+ lis[i].innerHTML = parseInt(lis[i].innerHTML,10) + parseInt(n, 10);
+  }
+}
