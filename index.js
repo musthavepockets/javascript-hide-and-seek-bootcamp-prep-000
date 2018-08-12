@@ -12,10 +12,10 @@ function nestedTarget() {
 
 function deepestChild() {
   let current = document.querySelector('#grand-node');
-  let next = grand-node.children[0];
+  let next = grandnode.children[0];
   while (next) {
     current = next;
-    next = grand-node.children[0];
+    next = grandnode.children[0];
       }
       return current;
   }
