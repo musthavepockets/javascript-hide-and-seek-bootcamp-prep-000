@@ -4,8 +4,8 @@ function getFirstSelector(selector) {
 
 
 function nestedTarget() {
-  var main = document.getElementById('#nested');
-  var getIt = main.children[3];
+  var nested = document.getElementById('#nested');
+  var getIt = nested.children[3];
   return getIt;
 }
 
